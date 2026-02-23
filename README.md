@@ -1,11 +1,11 @@
-# 🔋 Smart Digital Battery Voltage and Health Monitoring System
+#  Smart Digital Battery Voltage and Health Monitoring System
 
-## 📌 Aim
+##  Aim
 To design and implement a digital instrumentation system that continuously measures battery voltage, estimates battery health, and provides real-time visual and audio alerts using LEDs, a buzzer, and an LCD.
 
 ---
 
-## 🧠 Project Overview
+##  Project Overview
 This project monitors battery voltage using a potentiometer (simulated battery), converts the analog signal into digital form using Arduino’s ADC, processes the data to calculate battery health, and displays:
 
 - Battery Voltage (V)
@@ -16,23 +16,7 @@ Real-time alerts are provided using LEDs and a buzzer.
 
 ---
 
-## 🧩 Block Diagram Explanation
-Battery (Simulated)  
-↓  
-Voltage Divider (Potentiometer)  
-↓  
-ADC (Arduino UNO)  
-↓  
-Processing Logic  
-↓  
-LCD Display + LEDs + Buzzer  
-
-**Viva line:**  
-“The system follows the standard digital instrumentation flow: sensing, signal conditioning, analog-to-digital conversion, processing, and display.”
-
----
-
-## 🔌 Hardware Components Used
+##  Components Used
 - Arduino UNO  
 - 16×2 LCD Display  
 - Potentiometer (battery voltage simulation)  
@@ -44,17 +28,15 @@ LCD Display + LEDs + Buzzer
 
 ---
 
-## ⚙️ Working Principle
+##  Working Principle
 
-### 1️⃣ Voltage Sensing
+### 1. Voltage Sensing
 A potentiometer simulates battery voltage from 0–5V.  
 The middle pin is connected to Arduino analog pin A0.
 
-“This emulates varying battery conditions.”
-
 ---
 
-### 2️⃣ Analog-to-Digital Conversion (ADC)
+### 2️. Analog-to-Digital Conversion (ADC)
 The Arduino ADC converts the analog voltage into a digital value ranging from 0 to 1023.
 
 **Voltage calculation:**
@@ -62,14 +44,14 @@ Voltage = (ADC × 5) / 1023
 
 ---
 
-### 3️⃣ Battery Health Calculation
+### 3️. Battery Health Calculation
 Battery health is calculated as:
 
 Health (%) = (Measured Voltage / 5V) × 100
 
 ---
 
-### 4️⃣ Decision Logic (Threshold-Based)
+### 4️. Decision Logic (Threshold-Based)
 
 | Voltage Range | Health (%) | Status    | Output            |
 |--------------|------------|-----------|-------------------|
@@ -79,21 +61,21 @@ Health (%) = (Measured Voltage / 5V) × 100
 
 ---
 
-### 5️⃣ Display and Alerts
+### 5️. Display and Alerts
 - LCD continuously displays voltage, health percentage, and status
 - LEDs indicate battery condition
 - Buzzer activates only during critical condition
 
 ---
 
-## 📐 Circuit Diagram
+##  Circuit Diagram
 ![Schematic Diagram](circuit/schematic.png)
 
 ![Tinkercad Circuit View](circuit/tinkercad_circuit_view.png)
 
 ---
 
-## 🧪 Simulation
+##  Simulation
 The project is designed and tested using Tinkercad.  
 A potentiometer is used to simulate real battery voltage variations.
 ---
