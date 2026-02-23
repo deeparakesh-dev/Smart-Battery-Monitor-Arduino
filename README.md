@@ -69,9 +69,9 @@ Health (%) = (Measured Voltage / 5V) × 100
 ---
 
 ##  Circuit Diagram
-![Schematic Diagram](circuit/schematic.png)
+![Schematic Diagram](circuit/schematic.pdf)
 
-![Tinkercad Circuit View](circuit/tinkercad_circuit_view.png)
+![Tinkercad Circuit View](circuit/tinkercad-circuit-view.png)
 
 ---
 
