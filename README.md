@@ -20,7 +20,7 @@ Real-time alerts are provided using LEDs and a buzzer.
 - Arduino UNO  
 - 16×2 LCD Display  
 - Potentiometer (battery voltage simulation)  
-- 10k Potentiometer (LCD contrast)  
+- 10k Potentiometer (for LCD contrast)  
 - LEDs (Green, Yellow, Red)  
 - Buzzer  
 - 220 Ω Resistors  
@@ -68,7 +68,7 @@ Health (%) = (Measured Voltage / 5V) × 100
 
 ---
 
-##  Circuit Diagram
+##  Circuit Diagrams
 ![Schematic Diagram](circuit/schematic.pdf)
 
 ![Tinkercad Circuit View](circuit/tinkercad-circuit-view.png)
